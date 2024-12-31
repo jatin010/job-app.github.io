@@ -1,4 +1,4 @@
-# README for Web Application
+## README for Web Application
 
 ## Project Overview
 This web application is designed to facilitate job applications and user registrations. It includes a job application form, a sign-in interface, and a registration page for new users.
