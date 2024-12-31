@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            function confirmRegistration(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                alert("Registration successful!");
+                // Optionally, you can submit the form after showing the alert
+                // event.target.submit(); // Remove this line to prevent double submission
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Job Applicant</a></li>
+                <li><a href="sign_in.html">Sign In</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="registration_box">
+                <h1>Register</h1>
+                <form action="submit_registration.php" method="post" onsubmit="confirmRegistration(event)">
+                    <div class="form_container">
+                        <div class="form_control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form_control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form_control">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required />
+                        </div>
+                        <div class="form_control">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required />
+                        </div>
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
